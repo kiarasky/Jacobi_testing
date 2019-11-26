@@ -1,3 +1,7 @@
+""" This code plots a solution matrix
+    Author and license
+"""
+
 import matplotlib.pyplot as plt
 import numpy as np
 

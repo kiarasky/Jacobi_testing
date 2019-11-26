@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 """ Brief introduction of my code 
     Names of authors
     License (if any)
@@ -21,7 +22,7 @@ m = [[0 for x in range(dim+2)] for y in range(dim+2)]
 m1 = [[0 for x in range(dim+2)] for y in range(dim+2)] 
 incr=100.0/(dim+1)
 
-# this loop makes the calculation
+# make the calculation
 for i in range(1,dim+2):
     m[i][0] =i*incr 
     m[dim+1][dim+1-i]=i*incr
@@ -33,7 +34,7 @@ for it in range(iters):
             m1[i][j]=0.25*(m[i-1][j]+m[i+1][j]+m[i][j-1]+m[i][j+1])
     m=list(m1)
 
-# writes to output
+# write output
 f=open("solution.dat","w+")
 for i in range(dim+2):
     for j in range(dim+2):
